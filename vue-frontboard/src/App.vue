@@ -3,18 +3,22 @@
     <PageHeader/> <!-- 헤더 컴포넌트 -->
     <router-view/>  <!-- 페이지 이동이 표시될 곳 -->
     <PageFooter/> <!-- 푸터 컴포넌트 -->
+    <LoadingBar :loading="this.$store.state.loadingStatus"></LoadingBar>
   </div>
 </template>
 
 <script>
 import PageHeader from '@/components/PageHeader'
 import PageFooter from '@/components/PageFooter'
+// eslint-disable-next-line
+import LoadingBar from '@/views/common/LoadingBar'
 
 export default {
   name: 'App',
   components: {
     PageFooter,
-    PageHeader
+    PageHeader,
+    LoadingBar
   }
 }
 </script>
