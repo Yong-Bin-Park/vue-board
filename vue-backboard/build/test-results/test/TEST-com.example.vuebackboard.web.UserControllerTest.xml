@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.vuebackboard.web.UserControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-14T23:26:04" hostname="LAPTOP-0E7CJUU4" time="0.806">
+  <properties/>
+  <testcase name="2. 로그인 성공 테스트" classname="com.example.vuebackboard.web.UserControllerTest" time="0.806"/>
+  <system-out><![CDATA[08:26:00.455 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+08:26:00.471 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+08:26:00.502 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.vuebackboard.web.UserControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+08:26:00.502 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.vuebackboard.web.UserControllerTest], using SpringBootContextLoader
+08:26:00.518 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.vuebackboard.web.UserControllerTest]: class path resource [com/example/vuebackboard/web/UserControllerTest-context.xml] does not exist
+08:26:00.518 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.vuebackboard.web.UserControllerTest]: class path resource [com/example/vuebackboard/web/UserControllerTestContext.groovy] does not exist
+08:26:00.518 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.vuebackboard.web.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+08:26:00.518 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.vuebackboard.web.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:26:00.549 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.vuebackboard.web.UserControllerTest]
+08:26:00.607 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\guest01\Desktop\vue-backboard\build\classes\java\main\com\example\vuebackboard\VueBackboardApplication.class]
+08:26:00.607 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.vuebackboard.VueBackboardApplication for test class com.example.vuebackboard.web.UserControllerTest
+08:26:00.708 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.vuebackboard.web.UserControllerTest]: using defaults.
+08:26:00.709 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+08:26:00.726 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@24111ef1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1f3f02ee, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1fde5d22, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5dcb4f5f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@71812481, org.springframework.test.context.support.DirtiesContextTestExecutionListener@16ce702d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7b94089b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ca20101, org.springframework.test.context.event.EventPublishingTestExecutionListener@47f9738, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6155d082, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3a5ecce3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@561868a0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2ea6e30c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6138e79a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2dcd168a]
+08:26:00.729 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6a55299e testClass = UserControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2f1de2d6 testClass = UserControllerTest, locations = '{}', classes = '{class com.example.vuebackboard.VueBackboardApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@45d84a20, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@710636b0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@740fb309, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6f204a1a, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2dfaea86, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@36c88a32], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.6)
+
+2022-12-15 08:26:01.043  INFO 15432 --- [    Test worker] c.e.vuebackboard.web.UserControllerTest  : Starting UserControllerTest using Java 1.8.0_291 on LAPTOP-0E7CJUU4 with PID 15432 (started by guest01 in C:\Users\guest01\Desktop\vue-backboard)
+2022-12-15 08:26:01.044  INFO 15432 --- [    Test worker] c.e.vuebackboard.web.UserControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2022-12-15 08:26:01.582  INFO 15432 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 08:26:01.629  INFO 15432 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2022-12-15 08:26:02.113  INFO 15432 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-15 08:26:02.285  INFO 15432 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-15 08:26:02.332  INFO 15432 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-15 08:26:02.379  INFO 15432 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-15 08:26:02.542  INFO 15432 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-15 08:26:02.682  INFO 15432 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-12-15 08:26:03.162  INFO 15432 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-15 08:26:03.177  INFO 15432 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 08:26:03.552  WARN 15432 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-15 08:26:04.019  INFO 15432 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://192.168.0.75:3306/t-admin_yb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Seoul'
+2022-12-15 08:26:04.269  INFO 15432 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c682e26, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ff074a0, org.springframework.security.web.context.SecurityContextPersistenceFilter@f3876ef, org.springframework.security.web.header.HeaderWriterFilter@3cb04dd, org.springframework.web.filter.CorsFilter@340fc1aa, org.springframework.security.web.authentication.logout.LogoutFilter@290c266c, com.example.vuebackboard.util.TokenRequestFilter@1de85972, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@df9d400, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cc4d454, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34a33343, org.springframework.security.web.session.SessionManagementFilter@30fa8a6b, org.springframework.security.web.access.ExceptionTranslationFilter@20231384, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5310e451]
+2022-12-15 08:26:04.712  INFO 15432 --- [    Test worker] c.e.vuebackboard.web.UserControllerTest  : Started UserControllerTest in 3.954 seconds (JVM running for 5.006)
+2022-12-15 08:26:04.813  INFO 15432 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2022-12-15 08:26:04.813  INFO 15432 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-12-15 08:26:04.814  INFO 15432 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+Hibernate: select userentity0_.idx as idx1_1_, userentity0_.user_id as user_id2_1_, userentity0_.user_name as user_nam3_1_, userentity0_.user_pw as user_pw4_1_ from tb_user userentity0_ where userentity0_.user_id=?
+Hibernate: select userentity0_.idx as idx1_1_, userentity0_.user_id as user_id2_1_, userentity0_.user_name as user_nam3_1_, userentity0_.user_pw as user_pw4_1_ from tb_user userentity0_ where userentity0_.user_id=?
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /user/login
+       Parameters = {}
+          Headers = [Content-Type:"application/json", Content-Length:"49"]
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.vuebackboard.web.UserController
+           Method = com.example.vuebackboard.web.UserController#login(Map)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"user_role":"ROLE_USER","user_id":"test_user","user_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ2dWUtYm9hcmQiLCJ1c2VyTmFtZSI6InRlc3RfdXNlciIsInVzZXJJZCI6InRlc3RfdXNlciIsImlhdCI6MTY3MTA2MDM2NX0.sp70-CwuqOuWLGhVGS0DEoy-DH4y4YlBdSKgNlSlO3k"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+{"user_role":"ROLE_USER","user_id":"test_user","user_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ2dWUtYm9hcmQiLCJ1c2VyTmFtZSI6InRlc3RfdXNlciIsInVzZXJJZCI6InRlc3RfdXNlciIsImlhdCI6MTY3MTA2MDM2NX0.sp70-CwuqOuWLGhVGS0DEoy-DH4y4YlBdSKgNlSlO3k"}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
